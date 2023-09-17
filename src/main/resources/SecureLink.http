@@ -1,0 +1,21 @@
+### Send POST with uri to encoder (audio)
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+  "uri": "https://www.elongsound.com/images/mp3/reggaedrum_43_115a_bytuneloniration.mp3",
+  "expired": "30"
+}
+
+### Send POST with uri to encoder (image)
+POST http://localhost:8080
+Content-Type: application/json
+
+{
+  "uri": "https://storage.googleapis.com/portfolio-50b24.appspot.com/anime-flv/001ec11b0ea818967fdf1e9c5012049b1652868149882.jpeg",
+  "expired": "20"
+}
+
+### Get all storage
+GET http://localhost:8080
+Content-Type: application/json
