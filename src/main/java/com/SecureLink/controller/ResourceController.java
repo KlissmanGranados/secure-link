@@ -27,8 +27,8 @@ public class ResourceController {
         return resourceService.uriEncoder(resourceDto);
     }
 
-    @GetMapping(params = {"key"})
-    public ResponseEntity<byte[]> getResource(@RequestParam String key){
+    @GetMapping("/{key}" )
+    public ResponseEntity<byte[]> getResource(@PathVariable String key){
         return resourceService.getResource(key);
     }
 
